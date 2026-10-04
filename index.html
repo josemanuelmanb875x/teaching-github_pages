@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +14,13 @@
       color: #263044;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    body { margin: 0; }
+    body {
+      margin: 0;
+    }
 
     .pagina {
       width: min(100% - 32px, 900px);
@@ -48,13 +53,35 @@
       font-weight: bold;
     }
 
-    h1 { margin: 0 0 8px; font-size: clamp(32px, 6vw, 48px); }
-    .subtitulo { margin: 0; font-size: 18px; line-height: 1.5; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 6vw, 48px);
+    }
 
-    .contenido { padding: 36px 48px 48px; }
-    section + section { margin-top: 30px; }
-    h2 { margin: 0 0 10px; color: #4664a9; font-size: 21px; }
-    p { margin: 0; line-height: 1.7; }
+    .subtitulo {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .contenido {
+      padding: 36px 48px 48px;
+    }
+
+    section+section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: #4664a9;
+      font-size: 21px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.7;
+    }
 
     .tarjetas {
       display: grid;
@@ -78,20 +105,33 @@
     }
 
     @media (max-width: 600px) {
-      .pagina { margin: 16px auto; }
-      .encabezado, .contenido { padding: 28px; }
-      .tarjetas { grid-template-columns: 1fr; }
-      footer { padding: 20px 28px; }
+      .pagina {
+        margin: 16px auto;
+      }
+
+      .encabezado,
+      .contenido {
+        padding: 28px;
+      }
+
+      .tarjetas {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        padding: 20px 28px;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="pagina">
     <article class="perfil">
       <header class="encabezado">
         <!-- CAMBIA LAS INICIALES Y EL TEXTO DE ABAJO. NO BORRES LAS ETIQUETAS. -->
         <div class="avatar" aria-hidden="true">TN</div>
-        <h1>Ana Lara</h1>
+        <h1>José Manuel García Vega</h1>
         <p class="subtitulo">Estudiante con ganas de aprender y crear cosas nuevas.</p>
       </header>
 
@@ -99,14 +139,15 @@
         <section>
           <!-- CAMBIA SOLO EL TEXTO ENTRE <p> Y </p>. -->
           <h2>Sobre mí</h2>
-          <p>Hola, soy estudiante y me gusta descubrir cómo funciona la tecnología. Esta es mi primera página publicada en internet.</p>
+          <p>Hola, soy estudiante y me gusta descubrir cómo funciona la tecnología. Esta es mi primera página publicada
+            en internet.</p>
         </section>
 
         <section>
           <!-- CAMBIA EL TEXTO DE CADA TARJETA. -->
           <h2>Mis intereses</h2>
           <div class="tarjetas">
-            <div class="tarjeta">🎨 Me gusta programar</div>
+            <div class="tarjeta">🎨 Me gusta programar (puro Vibe Coding alv Bv)</div>
             <div class="tarjeta">🎵 Me gusta Stray Kids.</div>
             <div class="tarjeta">💻 Me gusta Supertramp.</div>
           </div>
@@ -123,5 +164,5 @@
     </article>
   </main>
 </body>
-</html>
 
+</html>
